@@ -1,0 +1,48 @@
+{"intents": [
+        {"tag": "Saludo",
+         "patterns": ["Hola", "¿Cómo estás?", "¿Hay alguien ahí?", "Hola", "Hola", "Hola", "Buen día"],
+         "responses": ["Es bueno verte de nuevo", "Hola, ¿como puedo ayudar?"],
+         "context": ["Conocerce"]
+        },
+        {"tag": "Saludo_con_nombre",
+                "patterns": ["Como te llamas?",    "¿Cómo es que es tu nombre?", "Me dijiste que te llamabas."],
+                "responses": ["Me llamo Ades", "Mi nombre es Ades"],
+                "context": ["Conocerce"]
+        },
+        {"tag": "Despedida",
+         "patterns": ["Adiós", "Hasta luego", "Adiós", "Encantado de charlar contigo, adiós", "Hasta la próxima"],
+         "responses": ["¡Nos vemos!", "Que tengas un buen día", "¡Adiós! Vuelve pronto"],
+         "context": [""]
+        },
+        {"tag": "Agradecimiento",
+         "patterns": ["Gracias", "Gracias", "Eso es útil", "Genial, gracias", "Gracias por ayudarme"],
+         "responses": ["Encantado de ayudar!", "En cualquier momento!", "Mi placer"],
+         "context": [""]
+        },
+        {"tag": "no_respuesta",
+         "patterns": [],
+         "responses": ["Lo siento, no puedo entenderte", "Por favor, dame más información", "No estoy seguro de entenderlo"],
+         "context": [""]
+        },
+        {"tag": "optiones",
+         "patterns": ["¿Cómo me podrías ayudar?", "¿Qué puedes hacer?", "¿Qué ayuda me brindas?", "¿Cómo puedes ayudarme?", "¿Qué apoyo se ofrece?"],
+         "responses": ["cuentame cuales son tus problemas"],
+         "context": ["sintomas_fisicos", "sintomas_psicologicos"]
+        },
+        {"tag": "sintomas_fisicos",
+         "patterns": ["Dolor de cabeza", "Tensión o dolor muscular", "Dolor en el pecho",  "Fatiga",  "Irritabilidad o enojo","Malestar estomacal", "Práctica de ejercicio con menos frecuencia" ],
+         "responses": [""],
+         "context": ["respuestas"]
+        },
+        {"tag": "sintomas_psicologicos",
+                "patterns": ["Inquietud", "Falta de motivación o enfoque", "Sentirse abrumado", "Tristeza o depresión"],
+                "responses": [""],
+                "context": ["sintomas"]
+        },
+        {"tag": "respuestas",
+                "patterns": ["que hago"],
+                "responses": ["has ejercico"],
+                "context": ["soluciones"]
+        }
+   ]
+}
