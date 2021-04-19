@@ -66,8 +66,10 @@
                                         block: "start",
                                         behavior: "smooth",
                                     });
-                                    var objDiv = document.getElementById("chatbox");
-                                    objDiv.scrollTop = objDiv.scrollHeight;
+                                    var elem = document.getElementById('chatbox');
+                                    elem.scrollTop = elem.scrollHeight;
+                                    
+                                    /*
                                     $.ajax({
                                         data: {
                                             msg: rawText,
@@ -81,11 +83,9 @@
                                             block: "start",
                                             behavior: "smooth",
                                         });
-                                    });
-                                    alert(rawText);
+                                    });*/
                                     event.preventDefault();
-                                    var objDiv = document.getElementById("chatbox");
-                                    objDiv.scrollTop = objDiv.scrollHeight;
+                                    alert(rawText);
                                 });
                             });
                         </script>
